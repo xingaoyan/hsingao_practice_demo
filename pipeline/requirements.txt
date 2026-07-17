@@ -10,3 +10,4 @@ pydantic
 tqdm
 charset-normalizer
 chardet
+requests
