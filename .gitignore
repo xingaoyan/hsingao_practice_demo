@@ -22,3 +22,6 @@ materials/links/
 dist/
 build/
 .pytest_cache/
+
+# 执行方案（本地维护，不提交到 Git）
+docs/execution-plan.md
