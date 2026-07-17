@@ -1,0 +1,273 @@
+# 系统架构设计师课程大纲配置
+
+course:
+  title: 系统架构设计师
+  description: 软件设计师高级资格考试
+
+  subjects:
+    - id: comprehensive
+      title: 综合知识
+      description: 上午选择题考试内容
+      chapters:
+        - id: computer-system
+          title: 计算机系统基础
+          description: 计算机组成、指令系统、存储系统等
+          keywords:
+            - 计算机组成
+            - 指令系统
+            - 存储系统
+            - 输入输出
+
+        - id: software-engineering
+          title: 软件工程
+          description: 软件开发方法、需求分析、设计模式等
+          keywords:
+            - 软件工程
+            - 需求分析
+            - 设计模式
+            - 软件测试
+
+        - id: architecture-design
+          title: 软件架构设计
+          description: 架构风格、架构评估、中间件等
+          keywords:
+            - 架构风格
+            - 分层架构
+            - 微服务
+            - 架构评估
+            - ATAM
+
+        - id: database
+          title: 数据库系统
+          description: 关系数据库、SQL、数据库设计等
+          keywords:
+            - 数据库
+            - SQL
+            - 关系模型
+            - 事务处理
+
+        - id: network-security
+          title: 网络与信息安全
+          description: 网络协议、安全技术、加密算法等
+          keywords:
+            - 网络协议
+            - 信息安全
+            - 加密
+            - 防火墙
+
+        - id: project-management
+          title: 项目管理
+          description: 项目规划、进度管理、风险管理等
+          keywords:
+            - 项目管理
+            - 进度管理
+            - 风险管理
+            - 质量管理
+
+        - id: system-analysis
+          title: 系统分析
+          description: 系统分析方法、建模技术等
+          keywords:
+            - 系统分析
+            - UML
+            - 建模
+
+        - id: system-design
+          title: 系统设计
+          description: 系统设计方法、设计原则等
+          keywords:
+            - 系统设计
+            - 设计原则
+            - 设计模式
+
+        - id: software-quality
+          title: 软件质量
+          description: 质量模型、质量保证、质量控制等
+          keywords:
+            - 软件质量
+            - 质量模型
+            - 质量保证
+
+        - id: legal-regulations
+          title: 法律法规与标准
+          description: 知识产权、标准化等
+          keywords:
+            - 法律法规
+            - 知识产权
+            - 标准化
+
+        - id: mathematics
+          title: 数学与经济管理
+          description: 概率论、运筹学等
+          keywords:
+            - 数学
+            - 概率论
+            - 运筹学
+
+    - id: case-analysis
+      title: 案例分析
+      description: 下午案例分析题考试内容
+      chapters:
+        - id: architecture-case
+          title: 软件架构设计案例
+          description: 架构设计、架构评估案例
+          keywords:
+            - 架构案例
+            - 架构设计
+            - 架构评估
+
+        - id: database-case
+          title: 数据库设计案例
+          description: 数据库设计、优化案例
+          keywords:
+            - 数据库案例
+            - 数据库设计
+
+        - id: security-case
+          title: 系统安全案例
+          description: 安全设计、安全评估案例
+          keywords:
+            - 安全案例
+            - 安全设计
+
+        - id: web-case
+          title: Web应用案例
+          description: Web架构、性能优化案例
+          keywords:
+            - Web案例
+            - Web架构
+
+        - id: embedded-case
+          title: 嵌入式系统案例
+          description: 嵌入式系统设计案例
+          keywords:
+            - 嵌入式案例
+
+    - id: essay
+      title: 论文
+      description: 下午论文写作考试内容
+      chapters:
+        - id: essay-method
+          title: 论文写作方法
+          description: 论文结构、写作技巧
+          keywords:
+            - 论文写作
+            - 写作方法
+            - 论文结构
+
+        - id: essay-topics
+          title: 论文专题
+          description: 常考论文主题
+          keywords:
+            - 论文题目
+            - 论文主题
+
+        - id: essay-examples
+          title: 论文范文
+          description: 优秀论文范文
+          keywords:
+            - 论文范文
+            - 范文
+
+# 章节关键词映射规则（用于自动分类）
+chapter_keywords:
+  computer-system:
+    - 计算机组成
+    - 指令系统
+    - 存储系统
+    - 冯诺依曼
+    - CPU
+    - 内存
+    - 总线
+    - 中断
+
+  software-engineering:
+    - 软件工程
+    - 需求分析
+    - 软件设计
+    - 软件测试
+    - 软件维护
+    - 开发模型
+    - 敏捷开发
+
+  architecture-design:
+    - 架构风格
+    - 分层架构
+    - 微服务
+    - SOA
+    - 架构评估
+    - ATAM
+    - 中间件
+    - 消息队列
+
+  database:
+    - 数据库
+    - SQL
+    - 关系模型
+    - 事务
+    - 并发控制
+    - 数据库设计
+    - 范式
+
+  network-security:
+    - 网络协议
+    - TCP/IP
+    - HTTP
+    - 信息安全
+    - 加密算法
+    - 防火墙
+    - 数字签名
+
+  project-management:
+    - 项目管理
+    - 进度管理
+    - 成本管理
+    - 风险管理
+    - 质量管理
+    - 人员管理
+
+  system-analysis:
+    - 系统分析
+    - UML
+    - 用例图
+    - 类图
+    - 活动图
+    - 建模
+
+  system-design:
+    - 系统设计
+    - 设计模式
+    - 设计原则
+    - 单例模式
+    - 工厂模式
+    - 观察者模式
+
+  software-quality:
+    - 软件质量
+    - 质量模型
+    - 可靠性
+    - 可维护性
+    - 可用性
+
+  legal-regulations:
+    - 知识产权
+    - 著作权
+    - 专利
+    - 商标
+    - 标准化
+    - ISO
+
+  architecture-case:
+    - 架构设计案例
+    - 架构评估案例
+    - 系统架构
+
+  database-case:
+    - 数据库设计案例
+    - 数据库优化
+
+  essay-method:
+    - 论文写作
+    - 摘要
+    - 正文
+    - 结论
