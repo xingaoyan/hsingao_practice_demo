@@ -9,6 +9,9 @@ __pycache__/
 .venv-*/
 
 data/extracted/
+data/normalized/
+data/structured/
+data/questions/
 data/logs/
 data/database/*.db
 data/database/*.db-shm

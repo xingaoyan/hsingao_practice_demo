@@ -1,0 +1,88 @@
+# Markdown 标准化规则配置
+
+normalization:
+  # 空行处理
+  blank_lines:
+    max_consecutive: 3  # 最大连续空行数
+    replace_with: 2     # 替换为的空行数
+
+  # 空格处理
+  spaces:
+    fix_multiple_spaces: true  # 修复多余空格
+    preserve_code_spaces: true # 保留代码块中的空格
+    preserve_indentation: true # 保留缩进
+
+  # 标点符号
+  punctuation:
+    normalize_fullwidth: false  # 不强制统一全角/半角
+    fix_ellipsis: true          # 修复省略号
+
+  # 代码块
+  code_blocks:
+    preserve: true    # 保留代码块
+    validate: true    # 验证代码块闭合
+
+  # 表格
+  tables:
+    preserve: true    # 保留表格
+    validate: true    # 验证表格格式
+
+  # 页眉页脚
+  header_footer:
+    detect: true      # 检测页眉页脚
+    remove: true      # 移除高置信度页眉页脚
+    threshold: 0.3    # 出现频率阈值（30%以上页面出现则标记）
+    min_pages: 5      # 最少页面数才进行检测
+
+  # 孤立页码
+  orphan_page_numbers:
+    detect: true      # 检测孤立页码
+    remove: true      # 移除孤立页码
+    patterns:
+      - '^\d+$'                    # 纯数字
+      - '^- \d+ -$'               # - 数字 -
+      - '^第\d+页$'                # 第X页
+      - '^\(\d+\)$'               # (数字)
+      - '^\[\d+\]$'               # [数字]
+      - '^Page \d+$'              # Page X
+      - '^\d+ / \d+$'             # X / Y
+
+  # 标题层级
+  headings:
+    restore_levels: true    # 恢复标题层级
+    max_level: 4            # 最大标题层级
+    patterns:
+      # 一级标题
+      level_1:
+        - '^第[一二三四五六七八九十百千\d]+[章篇部]'
+        - '^Chapter \d+'
+        - '^第\d+章'
+      # 二级标题
+      level_2:
+        - '^\d+\.\d+\s'           # 1.1 格式
+        - '^第[一二三四五六七八九十]+节'
+        - '^Section \d+'
+      # 三级标题
+      level_3:
+        - '^\d+\.\d+\.\d+\s'      # 1.1.1 格式
+        - '^\d+\.\d+\.\d+$'
+      # 四级标题
+      level_4:
+        - '^\d+\.\d+\.\d+\.\d+\s' # 1.1.1.1 格式
+
+  # 不处理的内容
+  preserve:
+    - year_numbers     # 年份
+    - question_numbers # 题号
+    - exam_points      # 考点编号
+    - code_blocks      # 代码块
+    - tables           # 表格
+    - images           # 图片引用
+    - links            # 链接
+    - formulas         # 公式
+
+  # 输出格式
+  output:
+    encoding: utf-8
+    line_ending: lf
+    ensure_final_newline: true
