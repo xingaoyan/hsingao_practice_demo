@@ -1,0 +1,29 @@
+{
+  "total_files": 226,
+  "by_type": {
+    "pdf": 152,
+    "docx": 63,
+    "image": 9,
+    "doc": 2
+  },
+  "by_category": {
+    "论文": 88,
+    "案例分析": 39,
+    "其他": 28,
+    "综合知识": 38,
+    "真题": 20,
+    "笔记": 1,
+    "教材": 12
+  },
+  "by_extension": {
+    ".pdf": 152,
+    ".docx": 63,
+    ".jpg": 6,
+    ".doc": 2,
+    ".png": 3
+  },
+  "total_size_bytes": 2647462279,
+  "duplicate_count": 0,
+  "pending_count": 226,
+  "total_size_readable": "2.47 GB"
+}
